@@ -85,16 +85,14 @@ public class VoiceManager : MonoBehaviour
         string trimmedTranscription = fullTranscription.Trim().ToLower();
 
         // Check if the user said "What's that?"
-        if (trimmedTranscription.Contains("what") && trimmedTranscription.Contains("looking at"))
+        if (trimmedTranscription.Contains("what") && trimmedTranscription.Contains("looking at") || trimmedTranscription.Contains("is that"))
         {
-            // Send query with a screenshot
             UnityEngine.Debug.Log("Message: " + fullTranscription.Trim().ToLower());
             UnityEngine.Debug.Log("Sending query with screenshot");
             geminiAPIManager.SendQueryWithScreenshot(fullTranscription);
         }
         else
         {
-            // Send query without screenshot
             UnityEngine.Debug.Log("Message: " + fullTranscription.Trim().ToLower());
             UnityEngine.Debug.Log("Sending query without screenshot");
             geminiAPIManager.SendQueryToGemini(fullTranscription);
@@ -104,13 +102,27 @@ public class VoiceManager : MonoBehaviour
     public void OnTTSStart()
     {
         _ttsInProgress = true;
+        MuteMicrophone(); // Mute the microphone
         appVoiceExperience.Deactivate(); // Deactivate voice recognition
     }
 
     public void OnTTSEnd()
     {
         _ttsInProgress = false;
-        Invoke(nameof(ReactivateVoice), 2f); // Reactivate voice recognition after 2 seconds
+        UnmuteMicrophone(); // Unmute the microphone
+        ReactivateVoice(); // Reactivate voice recognition
+    }
+
+    private void MuteMicrophone()
+    {
+        AudioListener.pause = true; // Mute microphone
+        UnityEngine.Debug.Log("Microphone muted.");
+    }
+
+    private void UnmuteMicrophone()
+    {
+        AudioListener.pause = false; // Unmute microphone
+        UnityEngine.Debug.Log("Microphone unmuted.");
     }
 
     public void OnGPTResponseReceived()

@@ -73,7 +73,7 @@ public class GeminiAPIManager : MonoBehaviour
 
         string payload = $@"{{
             ""contents"": [{{""parts"":[
-                {{""text"": ""{userQuery}""}},
+                {{""text"": ""You are an enthusiastic tour guide giving tours in Egypt. You're speaking to an architecture enthusiast who is showing you what they see. Treat whatever you see in the image as though it is reality that you are both experiencing together. Describe what you see in the image with enthusiasm as though you are there with them, and share an interesting architectural fact related to what's visible. Keep your response concise and engaging in 2 sentences. Here is their question: {userQuery}""}},
                 {{""inline_data"": {{""mime_type"": ""image/jpeg"", ""data"": ""{base64Image}""}}}}
             ]}}],
             ""generationConfig"": {{
