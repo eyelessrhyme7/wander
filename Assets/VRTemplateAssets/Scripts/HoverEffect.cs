@@ -1,23 +1,60 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.Video;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class HoverEffect : MonoBehaviour, IPointerEnterHandler
+public class HoverEffect : MonoBehaviour
 {
-    public CanvasGroup hiddenContent; // CanvasGroup for the Panel
+    public CanvasGroup hiddenContent; // CanvasGroup for the Panel (optional)
     public VideoPlayer hiddenVideoPlayer;
     public float fadeDuration = 0.5f; // Duration of fade effect
 
-    public void OnPointerEnter(PointerEventData eventData)
+    private void OnEnable()
     {
-        StopAllCoroutines(); // Stop any ongoing fade-out coroutine
-        StartCoroutine(FadeCanvasGroup(hiddenContent, hiddenContent.alpha, 1)); // Fade in the Panel
-        StartCoroutine(FadeVideoPlayer(hiddenVideoPlayer, hiddenVideoPlayer.targetCameraAlpha, 1)); // Fade in the Video
+        // Subscribe to hover events
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            UnityEngine.Debug.Log($"HoverEffect: Subscribed to hover events on {gameObject.name}");
+            interactable.hoverEntered.AddListener(OnHoverEntered);
+            interactable.hoverExited.AddListener(OnHoverExited);
+        }
+        else
+        {
+            UnityEngine.Debug.LogError($"HoverEffect: XRBaseInteractable missing on {gameObject.name}. Please add it.");
+        }
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe from hover events
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            interactable.hoverEntered.RemoveListener(OnHoverEntered);
+            interactable.hoverExited.RemoveListener(OnHoverExited);
+        }
+    }
+
+    private void OnHoverEntered(HoverEnterEventArgs args)
+    {
+        UnityEngine.Debug.Log($"Hover entered on {gameObject.name}.");
+        StopAllCoroutines();
+        StartCoroutine(FadeCanvasGroup(hiddenContent, hiddenContent.alpha, 1));
+        StartCoroutine(FadeVideoPlayer(hiddenVideoPlayer, hiddenVideoPlayer.targetCameraAlpha, 1));
+    }
+
+    private void OnHoverExited(HoverExitEventArgs args)
+    {
+        UnityEngine.Debug.Log($"Hover exited on {gameObject.name}.");
+        StopAllCoroutines();
+        StartCoroutine(FadeCanvasGroup(hiddenContent, hiddenContent.alpha, 0));
+        StartCoroutine(FadeVideoPlayer(hiddenVideoPlayer, hiddenVideoPlayer.targetCameraAlpha, 0));
     }
 
     private IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end)
     {
+        if (cg == null) yield break; // Skip if no CanvasGroup
         float elapsed = 0f;
         while (elapsed < fadeDuration)
         {
@@ -32,6 +69,7 @@ public class HoverEffect : MonoBehaviour, IPointerEnterHandler
 
     private IEnumerator FadeVideoPlayer(VideoPlayer vp, float start, float end)
     {
+        if (vp == null) yield break; // Skip if no VideoPlayer
         float elapsed = 0f;
         while (elapsed < fadeDuration)
         {

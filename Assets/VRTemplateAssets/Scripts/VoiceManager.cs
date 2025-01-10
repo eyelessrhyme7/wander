@@ -15,6 +15,7 @@ public class VoiceManager : MonoBehaviour
     [Header("Voice Events")]
     [SerializeField] private UnityEvent wakeWordDetected;
     [SerializeField] private UnityEvent<string> completeTranscription;
+    [SerializeField] private float fadeOutDuration = 2f; // Single duration control
 
     [Header("OpenAI Integration")]
     [SerializeField] private GeminiAPIManager geminiAPIManager; // Reference to OpenAIManager
@@ -97,6 +98,29 @@ public class VoiceManager : MonoBehaviour
             UnityEngine.Debug.Log("Sending query without screenshot");
             geminiAPIManager.SendQueryToGemini(fullTranscription);
         }
+
+        // Clear the transcription text after delay
+        StartCoroutine(ClearTranscriptionAfterDelay());
+    }
+
+    private System.Collections.IEnumerator ClearTranscriptionAfterDelay()
+    {
+    // Start fading immediately
+    float elapsedTime = 0;
+    Color startColor = transcriptionText.color;
+    Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
+
+    while (elapsedTime < fadeOutDuration)
+    {
+        elapsedTime += Time.deltaTime;
+        float normalizedTime = elapsedTime / fadeOutDuration;
+        transcriptionText.color = Color.Lerp(startColor, targetColor, normalizedTime);
+        yield return null;
+    }
+
+    // Reset the alpha and clear the text
+    transcriptionText.color = startColor;
+    transcriptionText.text = "";
     }
 
     public void OnTTSStart()

@@ -12,6 +12,7 @@ public class GeminiAPIManager : MonoBehaviour
     [SerializeField] private string geminiApiKey; // Your Gemini API Key
     [SerializeField] private TMPro.TextMeshProUGUI responseText; // UI element to display the response
     [SerializeField] private float wordDelay = 0.1f; // Delay between each word
+    [SerializeField] private float fadeOutDuration = 2f; // Duration for fade out
     [SerializeField] private Camera playerCamera; // Main Camera to capture the player's view
 
     [Header("Text-to-Speech")]
@@ -156,16 +157,36 @@ public class GeminiAPIManager : MonoBehaviour
     }
 
     private IEnumerator ShowTextWordByWord(string fullText)
-    {
-        responseText.text = ""; // Clear the current text
-        string[] words = fullText.Split(' '); // Split the text into words
+{
+    responseText.text = ""; // Clear the current text
+    // Reset color alpha to full
+    Color startColor = responseText.color;
+    responseText.color = new Color(startColor.r, startColor.g, startColor.b, 1f);
+    
+    string[] words = fullText.Split(' '); // Split the text into words
 
-        foreach (string word in words)
-        {
-            responseText.text += word + " "; // Add the word to the responseText
-            yield return new WaitForSeconds(wordDelay); // Wait before adding the next word
-        }
+    foreach (string word in words)
+    {
+        responseText.text += word + " "; // Add the word to the responseText
+        yield return new WaitForSeconds(wordDelay); // Wait before adding the next word
     }
+
+    // Start fade out after all words are shown
+    float elapsedTime = 0;
+    Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
+
+    while (elapsedTime < fadeOutDuration)
+    {
+        elapsedTime += Time.deltaTime;
+        float normalizedTime = elapsedTime / fadeOutDuration;
+        responseText.color = Color.Lerp(startColor, targetColor, normalizedTime);
+        yield return null;
+    }
+
+    // Reset the alpha and clear the text
+    responseText.color = startColor;
+    responseText.text = "";
+}
 
     private void SpeakResponse(string response)
     {
