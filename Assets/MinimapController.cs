@@ -7,9 +7,9 @@ public class MinimapController : MonoBehaviour
     public Vector3 offset = new Vector3(0, -1, 2); // Offset position relative to the camera
     public float distanceFromCamera = 2.0f; // Distance from the camera along its forward direction
     public float minLookDownAngle = 20.0f; // Angle threshold for looking down
-    public RectTransform minimapRectTransform; // Reference to the minimap UI
+  //  public RectTransform minimapRectTransform; // Reference to the minimap UI
 
-    private Transform canvasTransform;
+    private Transform canvasTransform; 
     private bool isLookingDown = false;
 
     void Start()
@@ -24,10 +24,10 @@ public class MinimapController : MonoBehaviour
         }
 
         // Ensure minimapRectTransform is assigned in the inspector
-        if (minimapRectTransform == null)
-        {
-            Debug.LogError("Minimap RectTransform not assigned!");
-        }
+        // if (minimapRectTransform == null)
+        // {
+        //     Debug.LogError("Minimap RectTransform not assigned!");
+        // }
     }
 
     void Update()
@@ -69,9 +69,9 @@ public class MinimapController : MonoBehaviour
         if (isLookingDown)
         {
             // If the camera is looking down, fix the minimap position (bottom right)
-            minimapRectTransform.anchorMin = new Vector2(1, 0);
-            minimapRectTransform.anchorMax = new Vector2(1, 0);
-            minimapRectTransform.anchoredPosition = new Vector2(-10, 10); // Customize this as needed
+        //    minimapRectTransform.anchorMin = new Vector2(1, 0);
+          //  minimapRectTransform.anchorMax = new Vector2(1, 0);
+            //minimapRectTransform.anchoredPosition = new Vector2(-10, 10); // Customize this as needed
         }
         else
         {
