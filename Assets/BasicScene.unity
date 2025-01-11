@@ -197,6 +197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &39839541
@@ -274,6 +278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &48932374
@@ -350,6 +358,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -501,6 +513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &109083624
@@ -650,6 +666,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -1036,6 +1056,10 @@ PrefabInstance:
       value: PointerTempleATop
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1237,6 +1261,10 @@ PrefabInstance:
       value: 3D RightArrow Temple B (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1321,6 +1349,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow Pyramid (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_IsActive
@@ -1675,6 +1707,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9014170783809206330, guid: a83e2587d60d06948b67dd67d8b0d7bf, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 9014170783809206335, guid: a83e2587d60d06948b67dd67d8b0d7bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.8
@@ -1951,6 +1987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &485891737
@@ -2098,6 +2138,10 @@ PrefabInstance:
       value: PointerPyramidTop
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2183,6 +2227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1 &538613748 stripped
@@ -2264,6 +2312,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -2420,6 +2472,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_Name
       value: PointerTempleCTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_IsActive
@@ -2730,6 +2786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &663463904
@@ -2739,9 +2799,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 505140364793332, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412742223927468334, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2515279092663287986, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: orthographic size
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515279092663287986, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403397015063213677, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568968721049831266, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5998094724103215489, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_RootOrder
@@ -2793,27 +2873,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998094724103215494, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5998094724689091586, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 2051014577}
+    - target: {fileID: 6386006656026868706, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6912265825773116585, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2051014578}
+    - target: {fileID: 6958359855733888387, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7821936197845872716, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7821936197845872716, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7821936197845872716, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7821936197845872716, guid: fdbdca8f1bb7a419d9d1e6efe7976022, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -3115,6 +3203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &810222858
@@ -3191,6 +3283,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -3279,7 +3375,7 @@ GameObject:
   - component: {fileID: 885647026}
   - component: {fileID: 885647025}
   - component: {fileID: 885647024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3440,6 +3536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1 &912707365 stripped
@@ -3592,6 +3692,10 @@ PrefabInstance:
       value: PointerTempleBTop
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -3676,6 +3780,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -3909,6 +4017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1005989770
@@ -4132,6 +4244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1056122705
@@ -4208,6 +4324,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow Sphinx (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_IsActive
@@ -4294,6 +4414,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -4683,6 +4807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1149144474
@@ -4930,6 +5058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1273609328
@@ -5006,6 +5138,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow Temple C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_IsActive
@@ -5092,6 +5228,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -5243,6 +5383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1312505637
@@ -5319,6 +5463,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -5497,6 +5645,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -5783,6 +5935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1503730914
@@ -5859,6 +6015,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -6105,7 +6265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588913631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mapanchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6701,6 +6861,10 @@ PrefabInstance:
       value: 3D RightArrow Temple A (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -6859,6 +7023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &1967128328
@@ -6935,6 +7103,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
       propertyPath: m_Name
       value: 3D RightArrow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
@@ -7252,6 +7424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3D RightArrow (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa34c15440dca384480fccd54e45a7cd, type: 3}
 --- !u!1001 &2101954867
@@ -7324,6 +7500,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_Name
       value: PointerSphinxTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f71db834346f3c488fe9b6c046d531c, type: 3}
       propertyPath: m_IsActive

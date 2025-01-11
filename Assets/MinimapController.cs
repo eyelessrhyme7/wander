@@ -49,7 +49,7 @@ public class MinimapController : MonoBehaviour
         float angle = Vector3.Angle(forward, Vector3.down);
 
         // Print the angle (0° when looking directly down, 90° horizontal, 180° when looking directly up)
-        Debug.Log("Vertical Angle: " + angle);
+        // Debug.Log("Vertical Angle: " + angle);
 
         // Normalize the angle (because it can be between 0 and 360 degrees)
        // if (verticalAngle > 180)
@@ -61,7 +61,7 @@ public class MinimapController : MonoBehaviour
          //   Debug.Log("Looking Down");
             isLookingDown = true;
         }
-        Debug.Log($"Vertical Angle: {angle}, Looking Down: {isLookingDown}");
+        // Debug.Log($"Vertical Angle: {angle}, Looking Down: {isLookingDown}");
     }
 
     void UpdateMinimapPosition()

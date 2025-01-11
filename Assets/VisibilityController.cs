@@ -45,7 +45,7 @@ public class VisibilityController : MonoBehaviour
             {
                 triggerPressed = false;
             }
-            Debug.Log($"Right Trigger Value: {rightTriggerValue}");
+            // Debug.Log($"Right Trigger Value: {rightTriggerValue}");
         
         }
 
@@ -77,7 +77,7 @@ public class VisibilityController : MonoBehaviour
             {
                 triggerPressed1 = false;
             }
-            Debug.Log($"Left Trigger Value: {leftTriggerValue}");
+            // Debug.Log($"Left Trigger Value: {leftTriggerValue}");
         }
 
         // Check Grip input for Left Controller
@@ -104,7 +104,7 @@ public class VisibilityController : MonoBehaviour
             {
                 triggerPressed2 = false;
             }
-            Debug.Log($"Left Grip Value: {leftGripValue}");
+            // Debug.Log($"Left Grip Value: {leftGripValue}");
         }
 
         // Check X Button input for Left Controller
