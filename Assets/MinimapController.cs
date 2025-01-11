@@ -57,7 +57,7 @@ public class MinimapController : MonoBehaviour
 
         // Determine if the camera is looking down
         
-        if(angle < 60.0f || angle > 100.0f){
+        if(angle < 70.0f || angle > 100.0f){
          //   Debug.Log("Looking Down");
             isLookingDown = true;
         }
